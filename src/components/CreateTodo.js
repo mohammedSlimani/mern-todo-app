@@ -33,11 +33,11 @@ export class CreateTodo extends Component {
     console.log(`Todo Description ${this.state.todo_description}`);
     console.log(`Todo priority ${this.state.todo_priority}`);
 
-    this.setState = {
+    this.setState({
       todo_description: "",
       todo_priority: "",
       todo_completede: false
-    };
+    });
   }
 
   render() {
