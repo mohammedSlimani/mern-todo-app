@@ -4,12 +4,12 @@
 
 ### First we Run the MangoDb Service
 in your termianl run 
-`mangod`
-`use todos`
+- `mangod`
+- `use todos`
 
 ### Let's Run the server
-`cd backend`
-`nodemon server.js`
+- `cd backend`
+- `nodemon server.js`
 You should see two log messages:
 - App running on PORT: 4000
 - DATABASE Connection successfely established
