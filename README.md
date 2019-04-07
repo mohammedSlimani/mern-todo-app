@@ -1,7 +1,5 @@
 # TODO App
 
-## Available Scripts
-
 ### Getting the BackEnd server to run
 
 ### First we Run the MangoDb Service
