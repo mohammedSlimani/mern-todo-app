@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import axios from "axios";
+
+const URL = "http://localhost:4000/todos";
 
 export class CreateTodo extends Component {
   constructor(props) {
@@ -32,6 +35,14 @@ export class CreateTodo extends Component {
     console.log(`Todo Submited`);
     console.log(`Todo Description ${this.state.todo_description}`);
     console.log(`Todo priority ${this.state.todo_priority}`);
+
+    const newTodo = {
+      todo_description: this.state.todo_description,
+      todo_priority: this.state.todo_priority,
+      todo_completed: this.state.todo_completed
+    };
+
+    axios.post(`${URL}/add`, newTodo).then(res => console.log(res.data));
 
     this.setState({
       todo_description: "",
